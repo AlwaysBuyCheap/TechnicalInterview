@@ -1,4 +1,4 @@
-﻿namespace PlaceInTecnicalInterview.Models.Types
+﻿namespace TechnicalInterview.Models.Types
 {
     public class Tiempo
     {

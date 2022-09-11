@@ -1,12 +1,12 @@
-﻿using PlaceInTecnicalInterview.Models.Types;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using TechnicalInterview.Models.Types;
 
-namespace Test
+namespace TechnicalInterviewTest
 {
     public class ControllersTest:IntegrationTest
     {

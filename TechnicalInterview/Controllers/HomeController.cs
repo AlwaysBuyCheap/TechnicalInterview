@@ -1,12 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MongoDB.Driver;
-using PlaceInTecnicalInterview.Models;
-using PlaceInTecnicalInterview.Models.Databases;
-using PlaceInTecnicalInterview.Models.Types;
-using System.Configuration;
+using TechnicalInterview.Models;
+using TechnicalInterview.Models.Databases;
+using TechnicalInterview.Models.Types;
 using System.Text.Json;
 
-namespace PlaceInTecnicalInterview.Controllers
+namespace TechnicalInterview.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

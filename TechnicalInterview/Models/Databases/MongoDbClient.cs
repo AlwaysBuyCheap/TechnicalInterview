@@ -1,8 +1,8 @@
 ﻿using MongoDB.Driver;
 using MongoDB.Bson;
-using PlaceInTecnicalInterview.Models.Types;
+using TechnicalInterview.Models.Types;
 
-namespace PlaceInTecnicalInterview.Models.Databases
+namespace TechnicalInterview.Models.Databases
 {
     public class MongoDbClient
     {

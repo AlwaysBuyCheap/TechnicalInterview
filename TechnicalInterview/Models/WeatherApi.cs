@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.WebUtilities;
-using PlaceInTecnicalInterview.Models.Types;
 using System.Text.Json;
+using TechnicalInterview.Models.Types;
 
-namespace PlaceInTecnicalInterview.Models
+namespace TechnicalInterview.Models
 {
     public class WeatherApi
     {
@@ -11,14 +11,6 @@ namespace PlaceInTecnicalInterview.Models
 
         public WeatherApi(string apiKeyEnvVariable)
         {
-            //var apiKeyEnvVariable = Environment.GetEnvironmentVariable("WEATHER_API_ACCESS_KEY");
-            //var apiKeyEnvVariable = "7be4d5c559bf441da063e5eb84d0c5b5";
-
-            if (apiKeyEnvVariable == null)
-            {
-                throw new Exception("Debe especificar una access key para la api del tiempo en las variables de entorno");
-            }
-
             apiKey = apiKeyEnvVariable;
             client = new();
             client.BaseAddress = new Uri("http://api.weatherstack.com/");

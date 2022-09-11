@@ -1,7 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
-using PlaceInTecnicalInterview.Models.Types;
+using TechnicalInterview.Models.Types;
 
-namespace PlaceInTecnicalInterview.Models.Databases
+namespace TechnicalInterview.Models.Databases
 {
     public class MysqlClient
     {
