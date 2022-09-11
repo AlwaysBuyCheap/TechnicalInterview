@@ -1,21 +1,14 @@
 version: '3.3'
 services:
   db:
-    #image: mysql:latest
     build: .
-    # network_mode: bridge
-    # restart: always
     environment:
-      # MYSQL_DATABASE: 'gain'
-      # MYSQL_USER: 'pablo'
-      # MYSQL_PASSWORD: 'Admin@123'
       MYSQL_ROOT_PASSWORD: 'Admin@123'
     ports:
       - '3306:3306'
     expose:
       - '3306'
-    # volumes:
-    #   - ./data:/var/lib/mysql
+
   mongo:
     image: mongo
     restart: always
@@ -25,16 +18,3 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: abc123..
 
-  # mongo-express:
-  #   image: mongo-express
-  #   restart: always
-  #   ports:
-  #     - 8081:8081
-  #   environment:
-  #     ME_CONFIG_MONGODB_ADMINUSERNAME: root
-  #     ME_CONFIG_MONGODB_ADMINPASSWORD: abc123..
-  #     ME_CONFIG_MONGODB_URL: mongodb://root:abc123..@mongo:27017/
-# Names our volume
-# volumes:
-#   my-db:
-    # driver: local
